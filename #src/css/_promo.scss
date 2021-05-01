@@ -1,0 +1,70 @@
+.promo {
+    background: url('/images/promo.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.banner {
+    border-radius: 20px;
+    background-color: rgba(255,255,255, 0.5);
+    margin: 5.625rem 0;
+    padding: 4rem;
+    height: 30rem;
+    position: relative;
+    display: flex;
+}
+
+.banner h1 {
+
+    color: #fff;
+    background-color: $primary-color-700;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    font-size: 2.8rem;
+
+    span {
+        background: linear-gradient(to top, $accent-color 0%, #F387CF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: $accent-color;
+        font-weight: 600;
+    }
+}
+
+.banner p {
+    margin-top: 2.25rem;
+
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: $primary-color-900;
+
+    span {
+        font-weight: 600;
+    }
+
+}
+
+.banner div {
+    flex-basis: 50%;
+    padding: 2rem;
+    padding-left: 0;
+}
+
+.banner-overlap {
+
+    border-radius: 20px;
+
+    background-color: rgba(192,192,192, 0.5);
+    background-size: auto 100%;
+    background-image: url('/images/banner.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 67.5%;
+    height: 100%;
+    position: absolute;
+    left:50%;
+}
