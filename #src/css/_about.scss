@@ -10,15 +10,17 @@
         list-style: none;
         font-size: 1.75rem;
         text-decoration: underline;
+        text-decoration-skip-ink: none;
 
         img {
             max-height: 4.5rem;
             vertical-align: middle;
+            padding-right: 1rem;
         }
 
     }
 
-    li + li {
+    li+li {
         margin-top: 1rem;
     }
 
@@ -33,10 +35,17 @@
     height: 100%;
     position: absolute;
     top: 0;
-    left:50%;
+    left: 50%;
     background-image: url('/images/about-us.jpg');
     background-repeat: no-repeat;
     background-size: auto 80%;
     background-position: bottom center;
     background-repeat: no-repeat;
+    
 }
+
+@media (max-width: 320px) {
+    .about-us-bg {
+        display: none;
+    }
+    }

@@ -1,0 +1,36 @@
+.footer hr {
+    background: none;
+    padding: 0;
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid $primary-color-700;
+}
+
+
+.footer-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.footer-navigation li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.footer-navigation li:first-of-type {
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+
+.footer-navigation a {
+    color: $primary-color-500;
+    text-decoration: none;
+
+    &:hover {
+        color: lighten($primary-color-500, 30%);
+    }
+
+}

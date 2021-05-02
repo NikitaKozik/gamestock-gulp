@@ -6,10 +6,10 @@
 
 .banner {
     border-radius: 20px;
-    background-color: rgba(255,255,255, 0.5);
-    margin: 5.625rem 0;
-    padding: 4rem;
-    height: 30rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 5.625em 0;
+    padding: 4em;
+    min-height: 30em;
     position: relative;
     display: flex;
 }
@@ -19,7 +19,7 @@
     color: #fff;
     background-color: $primary-color-700;
     border-radius: 20px;
-    padding: 0.5rem 2rem;
+    padding: 0.15em 0.75em;
     font-weight: 500;
     font-size: 2.8rem;
 
@@ -34,12 +34,13 @@
 }
 
 .banner p {
-    margin-top: 2.25rem;
-
+    margin-top: 1em;
     text-align: center;
     font-size: 2.25rem;
     font-weight: 500;
     color: $primary-color-900;
+
+
 
     span {
         font-weight: 600;
@@ -49,7 +50,7 @@
 
 .banner div {
     flex-basis: 50%;
-    padding: 2rem;
+    padding: 2em;
     padding-left: 0;
 }
 
@@ -57,7 +58,7 @@
 
     border-radius: 20px;
 
-    background-color: rgba(192,192,192, 0.5);
+    background-color: rgba(192, 192, 192, 0.5);
     background-size: auto 100%;
     background-image: url('/images/banner.svg');
     background-position: center;
@@ -66,5 +67,37 @@
     width: 67.5%;
     height: 100%;
     position: absolute;
-    left:50%;
+    left: 50%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 320px) {
+
+.banner {
+    font-size: 2px;
+    background: none;
+} 
+    
+.banner-overlap {
+    display: none;
+}
+
+.banner div {
+    flex-basis: 100%;
+}
+
+.banner h1 {
+    padding: 0.1em;
+    background-color: $primary-color-800;
+    border-radius: 0;
+    margin: 0;
+    font-size: 1.9rem;
+}
+
+.banner p {
+    font-size: 1rem;
+    text-align: left;
+    color: $primary-color-400;
+}
+
 }

@@ -1,0 +1,45 @@
+.sub-box {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.375rem;
+    p {
+        font-size: 1.75rem;
+        flex-basis: 40%;
+
+        span {
+            color: $accent-color;
+        }
+
+    }
+
+    form {
+        flex-grow: 1;
+        flex-basis: 60%;
+        display: flex;
+
+        input {
+            outline: 0;
+            border: 0;
+            padding:1rem;
+            font-size: 1.2rem;
+            display: block;
+            font-weight: 300;
+        }
+
+        input[type="text"] {
+            flex-basis: 80%;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+
+        input[type="submit"] {
+            background-color: $accent-color;
+            color: $primary-color-300;
+            cursor: pointer;
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+        }
+    }
+}
