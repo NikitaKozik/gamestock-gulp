@@ -13,7 +13,7 @@ let path = {
 
     src: {
         html: [projectSource + '/*.html', '!' + projectSource + '/_*.html'],
-        css: [projectSource + '/css/style.scss', '!' + projectSource + '/_*.scss'],
+        css: [projectSource + '/css/style.scss'],
         js: projectSource + '/js/main.js',
         images: projectSource + '/images/**/*.{jpg,png,svg,gif,ico,webp}'
     },
@@ -38,7 +38,8 @@ let {src, dest} = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify-es').default,
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    wait = require('gulp-wait');
 
 
 function browserSync(params) {
@@ -87,6 +88,7 @@ function js() {
 
 function css() {
     return src(path.src.css)
+    .pipe(wait(200))
     .pipe(
         scss({
             outputStyle: 'expanded'

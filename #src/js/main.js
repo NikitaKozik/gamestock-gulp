@@ -1,27 +1,24 @@
-function toggleMobNav() {
+function toggleDropdown() {
 
-    const navButton = document.getElementsByClassName('navigation-hamburger')[0],
-        nav = document.querySelector('.nav-links');
+    const toggleButton = document.querySelector('.open-dropdown'),
+          toggleContainer = document.querySelector('.dropdown-container');
 
-    navButton.addEventListener('click', (e) => {
-        nav.classList.toggle('mobile');
-
+    toggleButton.addEventListener('click', (e) => {
+        toggleContainer.classList.toggle('show');
+        toggleButton.classList.toggle('active');
         e.preventDefault();
         e.stopPropagation();
-
     });
 
     window.addEventListener('click', (e) => {
-        if (!nav.contains(e.target) && !navButton.contains(e.target)) {
-            nav.classList.remove('mobile');
+        if (!toggleContainer.contains(e.target) && !toggleButton.contains(e.target)) {
+            toggleContainer.classList.remove('show');
+            toggleButton.classList.remove('active');
             e.preventDefault();
             e.stopPropagation();
         }
     });
 
-
-
-
 }
 
-toggleMobNav();
+toggleDropdown();

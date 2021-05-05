@@ -1,390 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Gamestock</title>
 </head>
-
 <body>
 
     <header>
 
-    <nav class="navigation">
+        <div class="container">
 
-        <div class="logo-brand">
-            <img src="images/logo.svg">
-        </div>
+            <div class="header">
 
-        <div class="navigation-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+                <div class="logo-brand">
+                    <img src="/images/logo.svg">
+                </div>
 
-        <ul class="nav-links">
+                <div class="navigation">
 
+                    <nav>
+                        <ul class="links">
+                            <li><a href="#" class="open-dropdown">Каталог</a>
+                        
 
-            <li><a href="#">Каталог</a>
+                            </li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Самовывоз</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Поиск</a></li>
+                            <li><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="cart">
+                    <span class="cart-icon"></span>
+                    0 руб.
+                </div>
 
                 <div class="dropdown-container">
-                    <div class="mega-dropdown">
-                        <nav>
+                    <nav>
 
-                            <ul>
-                                <li>Аксессуары</li>
-                                <li><a href="#">Клавиатуры</a></li>
-                                <li><a href="#">Мыши</a></li>
-                                <li><a href="#">Наушники</a></li>
-                                <li><a href="#">Геймпады</a></li>
-                                <li><a href="#">Рули</a></li>
-                                <li><a href="#">Игровая мебель</a></li>
-                                <li><a href="#">VR-Аксессуары</a></li>
-                            </ul>
+                        <ul>
+                            <li>Аксессуары</li>
+                            <li><a href="#">Клавиатуры</a></li>
+                            <li><a href="#">Мыши</a></li>
+                            <li><a href="#">Наушники</a></li>
+                            <li><a href="#">Геймпады</a></li>
+                            <li><a href="#">Рули</a></li>
+                            <li><a href="#">Игровая мебель</a></li>
+                            <li><a href="#">VR-Аксессуары</a></li>
+                        </ul>
 
-                            <ul>
-                                <li>Компьютьеры</li>
-                                <li><a href="#">Системные блоки</a></li>
-                                <li><a href="#">Ноутбуки</a></li>
-                                <li><a href="#">Моноблоки</a></li>
-                                <li><a href="#">Игры для ПК</a></li>
-                            </ul>
+                        <ul>
+                            <li>Компьютьеры</li>
+                            <li><a href="#">Системные блоки</a></li>
+                            <li><a href="#">Ноутбуки</a></li>
+                            <li><a href="#">Моноблоки</a></li>
+                            <li><a href="#">Игры для ПК</a></li>
+                        </ul>
 
-                            <ul>
-                                <li>Консоли</li>
-                                <li><a href="#">Playstation</a></li>
-                                <li><a href="#">Игры для Playstation</a></li>
-                                <li><a href="#">Xbox</a></li>
-                                <li><a href="#">Игры для Xbox</a></li>
-                            </ul>
+                        <ul>
+                            <li>Консоли</li>
+                            <li><a href="#">Playstation</a></li>
+                            <li><a href="#">Игры для Playstation</a></li>
+                            <li><a href="#">Xbox</a></li>
+                            <li><a href="#">Игры для Xbox</a></li>
+                        </ul>
 
-                            <ul>
-                                <li>Комплектующие</li>
-                                <li><a href="#">Видеокарты</a></li>
-                                <li><a href="#">Процессоры</a></li>
-                                <li><a href="#">Оперативная память</a></li>
-                                <li><a href="#">Материнские платы</a></li>
-                                <li><a href="#">Охлаждение</a></li>
-                                <li><a href="#">Прочее</a></li>
-                            </ul>
+                        <ul>
+                            <li>Комплектующие</li>
+                            <li><a href="#">Видеокарты</a></li>
+                            <li><a href="#">Процессоры</a></li>
+                            <li><a href="#">Оперативная память</a></li>
+                            <li><a href="#">Материнские платы</a></li>
+                            <li><a href="#">Охлаждение</a></li>
+                            <li><a href="#">Прочее</a></li>
+                        </ul>
 
-                            <ul>
-                                <li>Мониторы</li>
-                                <li><a href="#">16х9</a></li>
-                                <li><a href="#">16х10</a></li>
-                                <li><a href="#">4х3</a></li>
-                                <li><a href="#">Прочее</a></li>
-                            </ul>
+                        <ul>
+                            <li>Мониторы</li>
+                            <li><a href="#">16х9</a></li>
+                            <li><a href="#">16х10</a></li>
+                            <li><a href="#">4х3</a></li>
+                            <li><a href="#">Прочее</a></li>
+                        </ul>
 
 
-                        </nav>
-                    </div>
-                </div>
-
-            </li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Самовывоз</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Поиск</a></li>
-            <li><a href="#">Личный кабинет</a></li>
-        </ul>
-
-        <div class="cart">
-            <span><img src="images/cart.svg"></span>
-            <span class="sum">0 руб.</span>
-
-        </div>
-
-    </nav>
-
-</header>
-    <section class="promo">
-
-    <div class="container">
-
-        <div class="banner">
-
-            <div>
-
-                <h1>Игровая техника <span>для победителей</span></h1>
-                <p>Профессиональные аксессуары для <span>лучших</span> результатов</p>
+                    </nav>
+            </div>
 
             </div>
 
-            <div class="banner-overlap">
-
-
-
-            </div>
-
-
         </div>
 
-    </div>
+    </header>
 
-</section>
-    <section class="featured">
-
-    <div class="container">
-        <h1>Лидеры продаж</h1>
-
-        <div class="featured-items">
-
-            <div class="item">
-                <div class="item-title">Игровая приставка Microsoft Xbox Series X</div>
-                <div class="item-img"><img src="images/shop/xbox.png"></div>
-                <div class="item-info">
-                    <div class="price">
-                        53 890 р.
-                        <span class="price_old">
-                            56 890 р.
-                        </span>
-                        <span class="rating">
-                            5.0 ☆☆☆☆☆
-                        </span>
-                    </div>
-                    <div class="add-to-cart">
-                        <button>В корзину</button>
+    <section class="hero-area">
+        <div class="container">
+                <div class="banner">
+                    <div class="hero-text">
+                        <h1>Игровая техника для <span>победителей</span></h1>
+                        <h2>Профессиональные аксессуары для лучших результатов</h2>
                     </div>
                 </div>
-            </div>
-
-            <div class="item">
-                <div class="item-title">Мышь CROWN Gaming CMXG-615</div>
-                <div class="item-img"><img src="images/shop/mouse.png"></div>
-                <div class="item-info">
-                    <div class="price">
-                        570 р.
-                        <span class="price_old">
-                            590 р.
-                        </span>
-                        <span class="rating">
-                            5.0 ☆☆☆☆☆
-                        </span>
-                    </div>
-                    <div class="add-to-cart">
-                        <button>В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-title">Геймпад Microsoft Xbox Series Carbon Black</div>
-                <div class="item-img"><img src="images/shop/gamepad.png"></div>
-                <div class="item-info">
-                    <div class="price">
-                        3 990 р.
-                        <span class="rating">
-                            5.0 ☆☆☆☆☆
-                        </span>
-                    </div>
-                    <div class="add-to-cart">
-                        <button>В корзину</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="item">
-                <div class="item-title">Геймпад Microsoft Xbox Series Robot White</div>
-                <div class="item-img"><img src="images/shop/gamepad_white.jpg"></div>
-                <div class="item-info">
-                    <div class="price">
-                        3 990 р.
-                        <span class="rating">
-                            5.0 ☆☆☆☆☆
-                        </span>
-                    </div>
-                    <div class="add-to-cart">
-                        <button>В корзину</button>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="item">
-                <div class="item-title">Моноблок 27" Apple iMac (Retina 5K, середина 2020 г.)</div>
-                <div class="item-img"><img src="images/shop/apple_mono.jpg"></div>
-                <div class="item-info">
-                    <div class="price">
-                        219 320 р.
-                        <span class="rating">
-                            5.0 ☆☆☆☆☆
-                        </span>
-                    </div>
-                    <div class="add-to-cart">
-                        <button>В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-title">Apple MacBook Pro 16 Late 2019</div>
-                <div class="item-img"><img src="images/shop/apple_laptop.jpg"></div>
-                <div class="item-info">
-                    <div class="price">
-                       118 342 р.
-                        <span class="rating">
-                            5.0 ☆☆☆☆☆
-                        </span>
-                    </div>
-                    <div class="add-to-cart">
-                        <button>В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-title">Wi-Fi роутер TP-LINK AX11000 RU</div>
-                <div class="item-img"><img src="images/shop/router.jpg"></div>
-                <div class="item-info">
-                    <div class="price">
-                        31 990 р.
-                        <span class="rating">
-                            5.0 ☆☆☆☆☆
-                        </span>
-                    </div>
-                    <div class="add-to-cart">
-                        <button>В корзину</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="item">
-                <div class="item-title">Ноутбук Lenovo IdeaPad</div>
-                <div class="item-img"><img src="images/shop/laptop.jpg"></div>
-                <div class="item-info">
-                    <div class="price">
-                        22 587 р.
-                        <span class="price_old">
-                            24 990 р.
-                        </span>
-                        <span class="rating">
-                            5.0 ☆☆☆☆☆
-                        </span>
-                    </div>
-                    <div class="add-to-cart">
-                        <button>В корзину</button>
-                    </div>
-                </div>
-            </div>      
-
         </div>
+    </section>
 
-        <a href="#" class="browse-all">Перейти в каталог</a>
-
-
-    </div>
-
-</section>
-    <section class="about-us">
-
-    <div class="container">
-
-        <h1>Почему именно мы?</h1>
-
-        <div class="why-us-points">
-            <ul>
-                <li>
-                    <img src="images/quality.svg">Высокое качество
-                </li>
-                <li>
-                    <img src="images/best-price.svg">Приятные цены
-                </li>
-                <li>
-                    <img src="images/contract.svg">Гарантия от производителя
-                </li>
-            </ul>
-
+    <section class="featured-items">
+        <div class="container">
+                <div style="height: 1400PX;">
+                </div>
         </div>
-
-        <div class="about-us-bg">
-
-        </div>
-
-    </div>
-
-</section>
-    <section class="subscription">
-    <div class="container">
-
-        <div class="sub-box">
-            <p>Подписывайтесь на рассылку, чтобы быть в курсе <span>новинок</span></p>
-            
-            <form>
-                <input type="text" placeholder="Ваш Email" name="mail"><input type="submit" value="Подписатьcя"></input>
-            </form>
-
-        </div>
-
-    </div>
-</section>
-    <section class="location">
-    <div class="container">
-        <h1>Как нас найти</h1>
-
-        <div class="location-info">
-            <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A16451953dea26ee9c59587ff7f2d93357041971842844c0352fede7195afb892&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script></div>
-        </div>
-    </div>
-</section>
-    <footer>
-    <div class="container">
-        <div class="footer">
-            <img src="/images/logo.svg">
-            <hr>
-
-            <nav class="footer-navigation">
-
-                <ul>
-                    <li>Покупателям</li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Гарантия</a></li>
-                </ul>
-
-                <ul>
-                    <li>Бизнесу</li>
-                    <li><a href="#">Реквезиты</a></li>
-                    <li><a href="#">Поставщикам</a></li>
-                    <li><a href="#">Документы</a></li>
-                </ul>
-
-                <ul>
-                    <li>О нас</li>
-                    <li><a href="#">Про Gamestock</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Вакансии</a></li>
-                    <li><a href="#">Как добраться</a></li>
-                </ul>
-
-                <ul>
-                    <li>Контакты</li>
-                    <li><a href="#">Мы в соц.сетях</a></li>
-                    <li><a href="#">Служба поддержки</a></li>
-                    <li><a href="#">Связаться с нами</a></li>
-                </ul>
-
-            </nav>
-
-            <hr>
-
-            <small>
-                &copy; Gamestock, 2021 <br>
-                Магазин игровой техники
-            </small>
-
-        </div>
-    </div>
-</footer>
-
-    <script src="js/main.min.js"></script>
+    </section>   
+    
 </body>
+
+<script src="js/main.js"></script>
 
 </html>
