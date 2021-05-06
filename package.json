@@ -22,5 +22,8 @@
     "gulp-uglify-es": "^2.0.0",
     "gulp-wait": "0.0.2",
     "rename": "^1.0.4"
+  },
+  "dependencies": {
+    "all": "0.0.0"
   }
 }
